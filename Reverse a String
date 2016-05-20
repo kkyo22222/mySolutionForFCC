@@ -1,0 +1,10 @@
+
+function reverseString(str) {
+  var newStr = "";
+  for(var i = 0; i < str.length ; i++){
+    newStr = newStr.concat(str[str.length-i-1]);
+  }
+  return newStr;
+}
+
+reverseString("hello");
