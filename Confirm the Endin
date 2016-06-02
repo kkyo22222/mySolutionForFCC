@@ -1,0 +1,21 @@
+
+function confirmEnding(str, target) {
+  // "Never give up and good luck will find you."
+  // -- Falcor
+  if(str.length < target.length){
+    return false;
+  }
+  else{
+    str = str.substr(str.length- target.length,str.length-1);
+    
+    if(str === target){
+      return true;
+    }
+    else{
+      return false;
+    }
+  }
+  
+}
+
+confirmEnding("Bastian", "n");
