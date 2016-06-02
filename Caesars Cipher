@@ -1,0 +1,21 @@
+
+function rot13(str) { // LBH QVQ VG!
+  var result = "";
+  for(var i =0;i<str.length;i++){
+    var catChar;
+    if(str.charCodeAt(i)>=65 && str.charCodeAt(i)<78){
+       catChar = String.fromCharCode((str.charCodeAt(i) + 13));
+    }
+    else if(str.charCodeAt(i)>=78 && str.charCodeAt(i) <=91 ){
+       catChar = String.fromCharCode((str.charCodeAt(i) - 13));
+    }
+    else{
+      catChar = str[i];
+    }
+    result = result.concat(catChar);
+  }
+  return result;
+}
+
+// Change the inputs below to test
+rot13("SERR PBQR PNZC");
