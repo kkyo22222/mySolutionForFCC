@@ -1,0 +1,17 @@
+
+function palindrome(str) {
+  str = str.toLowerCase();
+  str = str.replace(/[^a-z0-9]/gi,'');
+  // Good luck!
+  for(var i=0; i< str.length/2 ;i++){
+    if(str[i] != str[str.length-i-1]){
+      return false;
+    } 
+  }
+  
+  return true;
+}
+
+
+
+palindrome("eye");
