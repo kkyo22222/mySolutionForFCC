@@ -1,0 +1,19 @@
+function seekAndDes(val){
+      return val !== this.remove;
+}
+
+
+function destroyer(arr) {
+  // Remove all the values
+  resultArr = arr;
+  for(var i=1 ; i<arguments.length ; i++){   
+    var obj = {};
+    obj["remove"] = arguments[i];
+    resultArr = resultArr.filter(seekAndDes,obj);
+  }
+ 
+  return resultArr;
+}
+
+
+destroyer(["tree", "hamburger", 53], "tree", 53);
