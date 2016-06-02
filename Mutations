@@ -1,0 +1,22 @@
+
+function mutation(arr) {
+  arr[0] = arr[0].toLowerCase();
+  arr[1] = arr[1].toLowerCase();
+  var lookupTable1 = {};
+  var lookupTable2 = {};
+  for(var i=0;i<arr[0].length;i++){
+    lookupTable1[arr[0][i]] = true;
+  }
+  for(var i=0;i<arr[1].length;i++){
+    if(lookupTable1[arr[1][i]] === true){
+      
+    } 
+    else{
+      return false;
+    }
+  }
+ return true;
+  
+}
+
+mutation(["hello", "hey"]);
